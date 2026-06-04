@@ -1,4 +1,6 @@
-<p align="center"><img src="screenshots/dashboard.png" width="800" alt="Home Loan Strategy Lab Dashboard"/></p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Nishanth20/excel-home-loan-simulator-india/main/screenshots/dashboard.png" width="820" alt="Home Loan Strategy Lab — Dashboard"/>
+</p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Excel-2016%2B-217346?logo=microsoftexcel&logoColor=white" alt="Excel"/>
@@ -160,34 +162,40 @@ It compares normal, planned, and stressed loan paths before you commit.
 ## FAQ
 
 <details>
-<summary>Do I need to install anything beyond Excel?</summary>
-No. It runs as a native Excel VBA workbook.
+<summary><strong>Do I need to install anything beyond Excel?</strong></summary>
+<br>
+No. It runs as a native Excel VBA workbook. No add-ins, no Python, no external tools.
 </details>
 
 <details>
-<summary>Does this work on Mac?</summary>
-No. The documented compatibility is Excel 2016 and later on Windows.
+<summary><strong>Does this work on Mac?</strong></summary>
+<br>
+No. VBA macro execution and the Scripting.Dictionary object require Windows. Excel on Mac does not support this workbook.
 </details>
 
 <details>
-<summary>Can I use this for a loan that has already started?</summary>
-Yes. Enter your loan start date and current planning assumptions.
+<summary><strong>Can I use this for a loan that has already started?</strong></summary>
+<br>
+Yes. Enter your original loan start date and current outstanding principal as the loan amount. The schedule will run from month 1 of your inputs.
 </details>
 
 <details>
-<summary>What happens when my bank changes my floating rate?</summary>
-Add the month and new annual rate in `Rate_Changes`.
+<summary><strong>What happens when my bank changes my floating rate?</strong></summary>
+<br>
+Open the Rate_Changes sheet. Enter the month number when the change takes effect and the new annual rate. Click Recalculate Schedule.
 </details>
 
 <details>
-<summary>Is my data sent to any server?</summary>
-No server feature is described. It is a local Excel VBA workbook.
+<summary><strong>Is my data sent to any server?</strong></summary>
+<br>
+No. This is a local Excel file with no network calls. Nothing leaves your machine.
 </details>
 
 ## Contributing
 
-Pull requests are welcome.  
-All business logic lives in `LoanModule.bas`, so it is easy to review and fork.  
+Pull requests are welcome. All business logic lives in `LoanModule.bas` — it is one file, clearly structured, easy to read and fork.
+
+If you find a bug or want to suggest a feature, [open an issue](https://github.com/Nishanth20/excel-home-loan-simulator-india/issues/new).
 
 ## License
 
